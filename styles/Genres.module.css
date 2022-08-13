@@ -1,0 +1,50 @@
+.genre-categories-menus {
+    height: auto;
+    width: 100%;
+  
+    display: grid;
+    grid-template:
+      "header" 100px
+      "fav-genre" 100px
+      "genre-cat" auto
+      "footer" 200px /
+      1fr;
+    grid-gap: 100px;
+    background-color: #004355;
+    /* place-items: center; */
+  }
+  
+  .genre-categories-menus h2 {
+    grid-area: fav-genre;
+    font-size: 22px;
+    color: #84dbf3;
+    display: grid;
+    font-weight: 700;
+    place-self: center;
+  }
+  
+  .genre-categories-menus .genre-categories-wrapper {
+    display: grid;
+    grid-area: genre-cat;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-gap: 50px 5px;
+    place-content: center;
+    place-items: center;
+  }
+  
+  .genre-category {
+    background-color: rgb(217, 217, 217);
+    height: 300px;
+    width: 250px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  
+  .genre-category span {
+    color: #004355;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  

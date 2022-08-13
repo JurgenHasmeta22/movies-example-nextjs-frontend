@@ -1,0 +1,305 @@
+header.header {
+  grid-area: header;
+
+  width: 100%;
+  display: grid;
+  grid-template:
+    "header-group-1 header-group-2" 100px /
+    0.7fr 0.3fr; /* this is where the bug was wich cause header problems, i had all three at 1fr 1fr 1fr but when i tried auto in the last part all went perfect when responsive*/
+  background-color: #012b36;
+  grid-gap: 15px;
+}
+
+header.header .header-group-1 {
+  grid-area: header-group-1;
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+  grid-gap: 40px;
+  place-items: center;
+  padding-left: 50px;
+}
+
+header.header .header-group-1 a {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #5ad2f3;
+  font-style: italic;
+}
+
+header.header .header-group-1 ul {
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-gap: 25px;
+  place-items: center;
+}
+
+.div-inside-li {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  place-items: center;
+  grid-gap: 10px;
+}
+
+.div-inside-li-special {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  grid-gap: 10px;
+}
+
+.div-inside-li-special .genre-drop {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-gap: 15px;
+  place-items: center;
+}
+
+.div-inside-li-special .dropdown-content ul {
+  display: grid;
+  grid-template-columns: repeat(3, 0.33fr);
+  grid-gap: 20px;
+}
+
+header.header .header-group-1 ul.list-nav li.special-uppercase {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Roboto;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
+
+header.header .header-group-1 ul.list-nav a.special-uppercase {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Roboto;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
+
+ul .special-list-drop {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: Roboto;
+  cursor: pointer;
+}
+
+header .dropbtn img {
+  height: 40px;
+  width: 40px;
+}
+
+header.header .header-group-1 ul li:hover {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-bottom: 1px solid #f7eeee52;
+  color: #e92d2d;
+}
+
+header.header .header-group-2 {
+  grid-area: header-group-2;
+  display: grid;
+  grid-template-columns: 0.7fr 100px 100px;
+  grid-gap: 50px;
+  justify-content: end;
+  justify-items: end;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.button-login-header {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  background-color: #b61e1e;
+
+  display: grid;
+  grid-template-columns: 30px 80px;
+  place-items: center;
+}
+
+.button-login-header:hover {
+  background-color: #3684f1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.button-search {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  width: 100%;
+}
+
+.button-search input {
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button-search button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 15px;
+  border: none;
+  outline: none;
+  background-color: #b61e1e;
+}
+
+.button-search button:hover {
+  background-color: #3684f1;
+  transition: 1s;
+}
+
+/* Dropdown Button */
+header .dropbtn {
+  background-color: transparent;
+  color: rgb(247, 245, 245);
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  /* background-color: #e2850c; */
+  grid-template-columns: 0.5fr 0.5fr;
+  place-items: center;
+  grid-gap: 20px;
+}
+
+header .dropbtn:hover {
+  color: #fefeff;
+  transition: 1s;
+  /* border-bottom: 1px solid #ec8251; */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+header .drop-down-content .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* .div-inside-li-special .dropdown img {
+    height: 30px;
+    width: 30px;
+  } */
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #012b36;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* padding-top: 20px; */
+}
+
+/* Links inside the dropdown */
+header .dropdown-content button {
+  color: rgb(0, 0, 0);
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+header .dropdown-content button:hover {
+  color: rgb(254, 69, 69);
+}
+
+/* Show the dropdown menu on hover */
+header .dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #ffffff;
+}
+
+/* Dropdown Button */
+.div-inside-li-special .dropbtn {
+  background-color: transparent;
+  color: rgb(247, 245, 245);
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  border: none;
+  cursor: pointer;
+  /* display: grid; */
+  /* background-color: #e2850c; */
+  /* grid-template-columns: 0.5fr 0.5fr; */
+  /* place-items: center; */
+  /* grid-gap: 10px; */
+}
+
+.div-inside-li-special .dropbtn:hover {
+  color: #fefeff;
+  transition: 1s;
+  /* border-bottom: 1px solid #ec8251; */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.div-inside-li-special .drop-down-content .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* .div-inside-li-special .dropdown img {
+      height: 30px;
+      width: 30px;
+    } */
+
+.div-inside-li-special .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 20px 20px;
+}
+
+/* Links inside the dropdown */
+.div-inside-li-special .dropdown-content button {
+  color: rgb(0, 0, 0);
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.div-inside-li-special .dropdown-content button:hover {
+  color: rgb(250, 250, 250);
+}
+
+/* Show the dropdown menu on hover */
+.div-inside-li-special .dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #3684f1;
+}
+
+.movieLandiaLogo {
+  /* padding-left: 30px; */
+  cursor: pointer;
+}

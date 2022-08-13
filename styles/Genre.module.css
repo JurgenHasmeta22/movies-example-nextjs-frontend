@@ -1,0 +1,143 @@
+.genre-wrapper-menus {
+  display: grid;
+  grid-template:
+    "header" 100px
+    "genre-ribbon-1" auto
+    "footer" 100px /
+    1fr;
+
+  height: auto;
+  grid-gap: 60px;
+  width: 100%;
+  background-color: #004355;
+}
+
+.movie-item-genre span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.movie-item-genre span.movie.title {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  /* width: 90%; */
+}
+
+.genre-ribbon-1 ul li {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.movie-item-genre .imdb-span {
+  font-size: 14px;
+  font-weight: 800;
+  color: #5ad2f3;
+  display: grid;
+  place-items: center;
+}
+
+.genre-ribbon-1 img {
+  height: 350px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.genre-ribbon-1 {
+  grid-area: genre-ribbon-1;
+  display: grid;
+  grid-template-rows: 100px 0.9fr 0.1fr;
+  height: auto;
+  grid-gap: 20px;
+}
+
+.image-ribbon-1-genre-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 0.25fr);
+  grid-gap: 5px;
+  place-items: center;
+  height: auto;
+}
+
+.movie-item-genre {
+  /* padding-top: 20px;
+      border-top: 3px solid #5ad2f3; */
+  display: grid;
+  grid-template-rows: 0.7fr 0.1fr 0.1fr 0.1fr;
+  grid-gap: 10px;
+  cursor: pointer;
+}
+
+.movie-count-span {
+  display: grid;
+  place-self: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.movie-item-genre:hover {
+  transform: scale(1.1);
+  margin-right: 3%;
+  margin-left: 3%;
+  transition: 1s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.movie-item-genre .genres-holder-span {
+  display: grid;
+  grid-template-columns: 60px 80px 60px 60px;
+  /* grid-column-gap: 20px; */
+  place-items: center;
+}
+
+.movie-item-genre .genres-holder-span span {
+  font-size: 12px;
+  color: #7dd2f3;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 60px;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
+  padding-left: 250px;
+}
+
+.paginationBttns a {
+  padding: 15px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #9597fc;
+  color: #bfd5db;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #0e0e23;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #6466f2;
+}
+
+.paginationDisabled a {
+  color: grey;
+  background-color: grey;
+}
