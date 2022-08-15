@@ -42,7 +42,6 @@ import BlankLayout from '../components/BlankLayout'
 
 import * as yup from 'yup'
 import { useForm, Controller } from 'react-hook-form'
-// import { yupResolver } from '@hookform/resolvers/yup'
 import { yupResolver } from '@hookform/resolvers/yup/dist/yup'
 
 // ** Demo Imports
@@ -206,9 +205,7 @@ const LoginV1 = () => {
                   value={values.password}
                   control={control}
                   rules={{ required: true }}
-                  // value={password}
                   id='auth-login-password'
-                  // onChange={() => {setPassword(e.target.value)}}
                   onChange={handleChange('password')}
                   type={values.showPassword ? 'text' : 'password'}
                   endAdornment={

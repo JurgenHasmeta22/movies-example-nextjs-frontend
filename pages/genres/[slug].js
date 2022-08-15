@@ -28,6 +28,7 @@ import Footer from "../../components/Footer";
 
 export async function getServerSideProps(context) {
   const { slug } = context.params;
+  
   // const { page } = context.query
   // console.log(context)
   // const page = context.query.hasOwnProperty("page")

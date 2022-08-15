@@ -4,7 +4,7 @@ import styles from "../styles/Register.module.css";
 import { useRouter } from "next/router";
 import axios from "axios";
 
-export default function register() {
+export default function Register() {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

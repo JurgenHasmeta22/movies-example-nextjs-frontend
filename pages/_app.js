@@ -2,6 +2,7 @@ import NextNProgress from "nextjs-progressbar";
 import "../styles/globals.css";
 import { addBackToTop } from "vanilla-back-to-top";
 import {useEffect} from "react"
+
 function MyApp({ Component, pageProps }) {
 
   useEffect(function mount() {

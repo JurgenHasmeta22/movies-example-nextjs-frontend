@@ -4,7 +4,7 @@ import styles from "../styles/Login.module.css";
 import { useRouter } from "next/router";
 import axios from "axios";
 
-export default function login() {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
