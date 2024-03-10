@@ -2,7 +2,6 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import ReactPaginate from "react-paginate";
-import Carousel from "@palustris/react-images";
 import Link from "next/link";
 import { useState } from "react";
 import Header from "../components/Header";
@@ -46,13 +45,10 @@ export async function getServerSideProps(context) {
 
   const res1 = await axios(url);
   const movies = res1.data;
-
   const res2 = await axios(`http://localhost:4000/latest`);
   const latestMovies = res2.data;
-
   const res3 = await axios(`http://localhost:4000/movie-count`);
   const moviesCount = res3.data;
-
   const moviePayload = {
     title: context.query.search
       ? context.query.search
@@ -96,6 +92,7 @@ export default function Home(
 
   const changePage = ({ selected }) => {
     handleChangingPageNumber(selected);
+
     if (
       router.query.sortBy === undefined &&
       router.query.ascOrDesc === undefined
@@ -154,7 +151,6 @@ export default function Home(
       <div className={styles["home-wrapper-menus"]}>
         <Header />
         <div className={styles["home-ribbon-1"]}>
-          <Carousel views={getImages()} />
         </div>
 
         <div className={styles["home-ribbon-2"]}>
@@ -210,7 +206,6 @@ export default function Home(
                 >
                   <img src={movie.photoSrc} />
                   <span className={styles["movie-title"]}>{movie.title}</span>
-
                   <div className={styles["genres-holder-span"]}>
                     {movie.genres.map((genre) => (
                       <span
@@ -224,7 +219,6 @@ export default function Home(
                       </span>
                     ))}
                   </div>
-
                   <span className={styles["imdb-span"]}>
                     {movie.ratingImdb !== 0
                       ? "Imdb: " + movie.ratingImdb
@@ -251,7 +245,6 @@ export default function Home(
                 >
                   <img src={movie.photoSrc} />
                   <span className={styles["movie-title"]}>{movie.title}</span>
-
                   <div className={styles["genres-holder-span"]}>
                     {movie.genres.map((genre) => (
                       <span
