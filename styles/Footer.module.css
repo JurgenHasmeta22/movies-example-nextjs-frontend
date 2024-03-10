@@ -1,17 +1,17 @@
 .footer {
-  display: grid;
-  grid-area: Footer;
-  grid-template-rows: 40px 40px;
-  grid-gap: 10px;
-  place-items: center;
-  height: 200px;
-  background-color: #012b36;
-  place-content: center;
+    display: grid;
+    grid-area: Footer;
+    grid-template-rows: 40px 40px;
+    grid-gap: 10px;
+    place-items: center;
+    height: 200px;
+    background-color: #012b36;
+    place-content: center;
 }
 
 .footer-span {
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
 }

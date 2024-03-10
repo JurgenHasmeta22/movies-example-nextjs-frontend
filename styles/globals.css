@@ -3,39 +3,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 * {
-  margin: 0 0;
-  padding: 0 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 i {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    overflow-x: hidden;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 a {
-  transition: 1s;
-  color: #111111;
-  outline: none;
-  text-decoration: none;
+    transition: 1s;
+    color: #111111;
+    outline: none;
+    text-decoration: none;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 /* html,

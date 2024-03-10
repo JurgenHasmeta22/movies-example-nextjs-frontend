@@ -1,166 +1,166 @@
 section.container-profile-menus {
-  /* height: auto; */
-  width: 100%;
+    /* height: auto; */
+    width: 100%;
 
-  display: grid;
-  grid-template-rows: 0.2fr 0.8fr;
-  grid-gap: 50px;
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-gap: 50px;
 
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 section.container-profile-menus .container-profile-nav {
-  display: grid;
-  grid-template-rows: 1fr;
-  place-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
 }
 
 section.container-profile-menus .profile-info {
-  display: grid;
-  grid-template:
-    "image user" 0.5fr
-    "image subs" 0.5fr /
-    0.5fr auto;
-  grid-gap: 20px;
-  place-items: center;
-  place-content: center;
+    display: grid;
+    grid-template:
+        "image user" 0.5fr
+        "image subs" 0.5fr /
+        0.5fr auto;
+    grid-gap: 20px;
+    place-items: center;
+    place-content: center;
 }
 
 .profile-info img {
-  grid-area: image;
-  height: 100px;
-  width: 100px;
+    grid-area: image;
+    height: 100px;
+    width: 100px;
 }
 
 .profile-info span.subscribe-span {
-  grid-area: subs;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 2px;
+    grid-area: subs;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .profile-info span.userName-span {
-  grid-area: user;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 2px;
+    grid-area: user;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .container-tabs {
-  display: grid;
-  grid-template-rows: 0.1fr 0.9fr;
-  grid-gap: 25px;
-  /* height: auto; */
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    grid-gap: 25px;
+    /* height: auto; */
 }
 
 .container-tabs .list-tabs {
-  display: grid;
-  grid-template-columns: repeat(5, 0.2fr);
-  grid-gap: 30px;
-  place-items: center;
-  height: 70px;
-  background-color: rgb(236, 235, 235);
+    display: grid;
+    grid-template-columns: repeat(5, 0.2fr);
+    grid-gap: 30px;
+    place-items: center;
+    height: 70px;
+    background-color: rgb(236, 235, 235);
 }
 
 .clicked {
-  border-bottom: 1px solid #000;
-  color: rgb(231, 118, 118);
+    border-bottom: 1px solid #000;
+    color: rgb(231, 118, 118);
 }
 
 .list-tabs li {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .container-tabs .upload-video {
-  display: grid;
-  grid-template-rows: 150px 150px 150px 150px;
-  place-content: center;
-  place-items: center;
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px;
+    place-content: center;
+    place-items: center;
 }
 
 .container-tabs .upload-video p {
-  width: 45ch;
+    width: 45ch;
 }
 
 .upload-video h2 {
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: 3px;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 3px;
 }
 
 .favorite-movies {
-  display: grid;
-  grid-template-columns: repeat(5, 0.2fr);
-  place-items: center;
-  grid-gap: 15px;
-  place-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 0.2fr);
+    place-items: center;
+    grid-gap: 15px;
+    place-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .movie-fav {
-  display: grid;
-  grid-template-rows: 250px 0.5fr 0.5fr;
-  grid-gap: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
+    display: grid;
+    grid-template-rows: 250px 0.5fr 0.5fr;
+    grid-gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .movie-fav img {
-  height: 250px;
-  width: 200px;
+    height: 250px;
+    width: 200px;
 }
 
 .container-videos {
-  display: grid;
-  grid-template-columns: repeat(4, 0.25fr);
-  grid-gap: 20px;
-  height: auto;
-  place-items: center;
-  padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-gap: 20px;
+    height: auto;
+    place-items: center;
+    padding-bottom: 80px;
 }
 
 .special-video-you {
-  font-size: 16px;
-  font-weight: 700;
-  /* text-align: center; */
-  display: grid;
-  place-self: center;
-  padding-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    /* text-align: center; */
+    display: grid;
+    place-self: center;
+    padding-top: 30px;
 }
 
 .container-videos .image-post {
-  height: 150px;
-  width: 260px;
-  grid-area: image-post;
+    height: 150px;
+    width: 260px;
+    grid-area: image-post;
 }
 
 .upload-video p {
-  font-size: 16px;
-  width: 75ch;
-  font-style: italic;
+    font-size: 16px;
+    width: 75ch;
+    font-style: italic;
 }
 
 .upload-video button {
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 15px 15px;
-  background-color: rgb(243, 63, 63);
-  border: none;
-  outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 15px 15px;
+    background-color: rgb(243, 63, 63);
+    border: none;
+    outline: none;
 }
 
 .container-about {
-  display: grid;
-  place-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .container-about span {
-  font-size: 16px;
-  font-weight: 700;
+    font-size: 16px;
+    font-weight: 700;
 }

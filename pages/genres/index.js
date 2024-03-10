@@ -15,39 +15,39 @@ import styles from "../../styles/Genres.module.css";
 // }
 
 export async function getServerSideProps() {
-  const res = await axios(`http://localhost:4000/genres`);
-  const genres = res.data;
+    const res = await axios(`http://localhost:4000/genres`);
+    const genres = res.data;
 
-  return {
-    props: { genres },
-  };
+    return {
+        props: { genres }
+    };
 }
 
 export default function GenreCategoriesPage({ genres }) {
-  const router = useRouter();
+    const router = useRouter();
 
-  return (
-    <>
-      <div className={styles["genre-categories-menus"]}>
-        <Header />
-        <h2>Choose your favorite genre</h2>
+    return (
+        <>
+            <div className={styles["genre-categories-menus"]}>
+                <Header />
+                <h2>Choose your favorite genre</h2>
 
-        <div className={styles["genre-categories-wrapper"]}>
-          {genres?.map((genre) => (
-            <div
-              className={styles["genre-category"]}
-              key={genre.id}
-              onClick={function () {
-                router.push(`/genres/${genre.name}`);
-              }}
-            >
-              <span>{genre.name}</span>
+                <div className={styles["genre-categories-wrapper"]}>
+                    {genres?.map(genre => (
+                        <div
+                            className={styles["genre-category"]}
+                            key={genre.id}
+                            onClick={function () {
+                                router.push(`/genres/${genre.name}`);
+                            }}
+                        >
+                            <span>{genre.name}</span>
+                        </div>
+                    ))}
+                </div>
+                {/* <Footer /> */}
             </div>
-          ))}
-        </div>
-        {/* <Footer /> */}
-      </div>
-      <Footer />
-    </>
-  );
+            <Footer />
+        </>
+    );
 }

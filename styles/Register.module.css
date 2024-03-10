@@ -4,28 +4,28 @@
     height: 50%;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 1rem;
-  }
-  .left-main-wrapper {
+}
+.left-main-wrapper {
     display: grid;
     place-content: center;
     width: 122%;
-  }
-  #signup-page-img {
+}
+#signup-page-img {
     display: grid;
     place-content: center;
     /* width: 100%; */
     height: 100%;
     object-fit: contain;
     object-position: center;
-  }
-  .right-main-wrapper {
+}
+.right-main-wrapper {
     display: grid;
     align-content: start;
     place-items: center;
     justify-content: center;
     padding-top: 150px;
-  }
-  #signup-form {
+}
+#signup-form {
     display: grid;
     gap: 1rem;
     /*place-content: space-between;
@@ -41,16 +41,16 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-  }
-  #signup-form h1 {
+}
+#signup-form h1 {
     font-family: "Permanent Marker";
     color: #28fccaf5;
     font-size: 44px;
     width: 300px;
     letter-spacing: 1px;
     padding-top: 20px;
-  }
-  #signup-form input {
+}
+#signup-form input {
     display: grid;
     height: 30px;
     border-radius: 5px;
@@ -62,24 +62,24 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-  }
-  #username input {
+}
+#username input {
     width: 300px;
     height: 50px;
-  }
-  .input-wrapper {
+}
+.input-wrapper {
     display: grid;
     place-content: center;
-  }
-  #email {
+}
+#email {
     display: grid;
     width: 300px;
-  }
-  #password {
+}
+#password {
     display: grid;
     width: 300px;
-  }
-  #signup-form button {
+}
+#signup-form button {
     display: grid;
     width: 300px;
     height: 40px;
@@ -90,18 +90,18 @@
     background-color: #4190d1;
     color: whitesmoke;
     transition: 0.3s;
-  }
-  #signup-form button:hover {
+}
+#signup-form button:hover {
     cursor: pointer;
     transform: translate(-3px);
     transition: 0.3s;
-  }
-  
-  .special-image-2 {
+}
+
+.special-image-2 {
     height: 100%;
     width: 170%;
-  }
-  #login-link-wrapper {
+}
+#login-link-wrapper {
     display: grid;
     grid-template-columns: repeat(2, auto);
     font-weight: 600;
@@ -109,15 +109,14 @@
     gap: 1rem;
     font-weight: 800;
     padding-bottom: 20px;
-  }
-  #link {
+}
+#link {
     display: grid;
     color: #4190d1;
     transition: 0.3s;
-  }
-  #link:hover {
+}
+#link:hover {
     cursor: pointer;
     transform: translate(-3px);
     transition: 0.3s;
-  }
-  
+}
